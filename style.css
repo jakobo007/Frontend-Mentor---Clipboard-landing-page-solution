@@ -1,0 +1,185 @@
+:root {
+    /**Primary**/
+
+--Strong-Cyan: hsl(171, 66%, 44%);
+--Light-Blue: hsl(233, 100%, 69%);
+
+/**Neutral**/
+
+--Dark-Grayish-Blue: hsl(210, 10%, 33%);
+--Grayish-Blue: hsl(201, 11%, 66%);
+
+--margin: 0.5rem;
+--padding: 2rem;
+--padding2: 3.5rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Bai Jamjuree', sans-serif;
+    background-image: url(images/bg-header-mobile.png);
+    background-repeat: no-repeat;    
+    background-size: contain;
+}
+
+.container {
+    margin:  0 auto;
+}
+
+.wrapper {
+    display: grid;
+    place-content: center;
+    padding: var(--padding);
+}
+
+h1 {
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: var(--padding);
+}
+
+p {
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: var(--padding);
+}
+
+.box {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.desktop {
+   max-width: 700px;
+}
+
+.image {
+    width: 100%;
+}
+
+.logo {
+    margin-bottom: var(--margin);
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;    
+    text-align: center;
+    align-items: center;
+}
+    
+
+.button {
+    padding: 15px 40px;
+    text-decoration: none;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.ios {
+    background-color: var(--Strong-Cyan);
+    margin-bottom: var(--margin);
+}
+.mac{
+    background-color: var(--Light-Blue);
+}
+
+.right {
+    padding: var(--padding);
+    text-align: center;
+}
+
+.features {
+    text-align: center;
+}
+
+.features img {
+    padding-bottom: var(--margin);
+}
+
+.features p {
+    padding-top: var(--margin);
+}
+
+.sponsors {
+   display: grid;
+   place-content: center;
+   gap: var(--margin);
+   padding-bottom: var(--margin);
+}
+
+
+@media only screen and (min-width: 768px) {
+    body {
+        background-image: url(images/bg-header-desktop.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+
+    .box {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: var(--padding);
+        margin-bottom: var(--padding2);
+    }
+
+    .middle {
+        max-width: 1200px;
+        margin-right: auto;
+        padding-bottom: var(--padding);
+    }
+
+    .big_box {
+        display: flex;
+        justify-content: space-between;
+        align-items: left;
+        max-width: 1350px;
+    }
+    .right {
+        text-align: left;
+        max-width: 350px;
+        padding-left: var(--padding2);
+    }
+
+    .button {
+        margin-left: var(--margin);
+    }
+
+    .features {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .buttons {
+        display: inline;
+        padding-bottom: var(--paddin2);
+    }
+
+    .sponsors {
+        display: flex;
+        justify-content: space-evenly;
+        padding-bottom: var(--padding);
+    }
+
+    h1 {
+        font-size: 32px;
+        font-weight: 600;
+        padding-bottom: 1rem;
+    }
+    
+    p {
+        font-size: 22px;
+        font-weight: 400;
+    }
+    
+
+}
